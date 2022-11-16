@@ -21,9 +21,7 @@ body{
 }
 
 .menu_superior{
-    display: inline-block;
-    padding-top: 15px;
-    padding-left: 15px;
+    display: flex;
     box-sizing: border-box;
 }
 
@@ -40,13 +38,12 @@ body{
     border: solid 15px #ee785b;
 }
 
+
 .oval_background{
     padding-top: 60px;
     width: 600px;
     height: 700px;
     background-color: #FDF5F4;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
 }
 
@@ -57,10 +54,15 @@ body{
     flex-wrap: wrap;
 }
 
-.oval_background .catalogo_fotos img{
+.oval_background .catalogo_fotos .marco{
+    padding: 20px;
+    background-color: transparent;
+}
+
+.oval_background .catalogo_fotos .marco img{
     flex: 50%;
-    width: 230px;
-    height: 306px;
+    width: 200px;
+    height: 300px;
     position: relative;
     align-content: space-between;
 }
